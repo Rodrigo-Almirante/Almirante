@@ -1,0 +1,23 @@
+*************
+brew
+*************
+
+Install
+
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+
+*************
+OpenSSL
+*************
+
+% brew update
+% brew install openssl
+
+*************
+Commands
+*************
+
+% openssl s_client -showcerts -connect 173.194.73.139:443 < /dev/null
+
+% openssl s_client -showcerts -connect 195.148.124.80:6697 < /dev/null
