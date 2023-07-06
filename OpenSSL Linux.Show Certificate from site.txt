@@ -1,0 +1,27 @@
+Ubuntu : sudo apt-get install libssl-dev
+
+$ cd ~/Downloads
+$ wget https://www.openssl.org/source/openssl-1.1.1u.tar.gz
+$ tar -xvzf openssl-1.1.1u.tar.gz
+$ cd openssl-1.1.1u
+
+
+Compile Source:
+
+$ cd ~/Downloads
+$ git clone https://github.com/openssl/openssl.git
+$ cd openssl
+$ ./config
+$ make
+
+Install: 
+
+$ sudo make install
+
+
+Commands   : 
+
+$ cd c:\Program Files\OpenSSL-Win64\bin\
+$ openssl s_client -showcerts -connect 173.194.73.139:443 < /dev/null
+
+$ openssl s_client -showcerts -connect 195.148.124.80:6697 < /dev/null
