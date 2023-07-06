@@ -1,0 +1,14 @@
+Download : https://slproweb.com/products/Win32OpenSSL.html
+
+           Win64 OpenSSL v3.1.1 Light (Installer)
+
+or
+
+ZIP Format : https://kb.firedaemon.com/support/solutions/articles/4000121705-openssl-3-1-3-0-and-1-1-1-binary-distributions-for-microsoft-windows
+
+Commands   : 
+
+> cd c:\Program Files\OpenSSL-Win64\bin\
+> openssl s_client -showcerts -connect 173.194.73.139:443                       # Google
+
+> openssl s_client -showcerts -connect 195.148.124.80:6697
