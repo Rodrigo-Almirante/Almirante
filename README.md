@@ -2,10 +2,10 @@
 
 Python scripts
 
-convertirD.py  : Convierte un numero Decimal a otros sistemas numericos
+Convertir : Scripts para convertir de un sistema numerico hacia otro
 
-convertirH.py  : Convierte un numero Hexadecimal a otros sistemas numericos
+IP        : Scripts para mostrar la IP local o Externa
 
-convertirO.py  : Convierte un numero Octal a otros sistemas numericos
+OPEN SSL  : Instrucciones para instalar Open SSL y comandos para recibir certificados
 
-convertirzB.py : Convierte un numero Binario a otros sistemas numericos
+Search    : Scripts para hacer una busqueda desde dentro de la script o utilizando el browser externo por default
