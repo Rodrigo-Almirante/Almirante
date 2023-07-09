@@ -47,16 +47,16 @@ std::string decimalToBinary(int numero) {
 int main() {
     int numero;
     
-    std::cout << "Ingrese un número decimal: ";
+    std::cout << "Ingrese un numero decimal: ";
     std::cin >> numero;
     
     std::string hexadecimal = decimalToHexadecimal(numero);
     std::string octal = decimalToOctal(numero);
     std::string binario = decimalToBinary(numero);
     
-    std::cout << "El número en hexadecimal es: " << hexadecimal << std::endl;
-    std::cout << "El número en octal es: " << octal << std::endl;
-    std::cout << "El número en binario es: " << binario << std::endl;
+    std::cout << "El numero en hexadecimal es: " << hexadecimal << std::endl;
+    std::cout << "El numero en octal es: " << octal << std::endl;
+    std::cout << "El numero en binario es: " << binario << std::endl;
     
     return 0;
 }

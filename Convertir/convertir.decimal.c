@@ -17,7 +17,7 @@ void decimalToHexadecimal(int numero) {
         i++;
     }
     
-    printf("El número en hexadecimal es: ");
+    printf("El numero en hexadecimal es: ");
     
     for (int j = i - 1; j >= 0; j--) {
         printf("%c", hexadecimal[j]);
@@ -35,7 +35,7 @@ void decimalToOctal(int numero) {
         i = i * 10;
     }
     
-    printf("El número en octal es: %d\n", octal);
+    printf("El numero en octal es: %d\n", octal);
 }
 
 void decimalToBinario(int numero) {
@@ -47,7 +47,7 @@ void decimalToBinario(int numero) {
         i++;
     }
     
-    printf("El número en binario es: ");
+    printf("El numero en binario es: ");
     
     for (int j = i - 1; j >= 0; j--) {
         printf("%d", binario[j]);
@@ -59,7 +59,7 @@ void decimalToBinario(int numero) {
 int main() {
     int numero;
     
-    printf("Ingrese un número decimal: ");
+    printf("Ingrese un numero decimal: ");
     scanf("%d", &numero);
     
     decimalToHexadecimal(numero);
