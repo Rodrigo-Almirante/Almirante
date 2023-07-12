@@ -1,10 +1,18 @@
 # Pedir al usuario que ingrese dos numeros
 
-numero1 = float(input("Ingrese el primer numero: "))
+numero1 = float(input("\nIngrese el primer numero: "))
 numero2 = float(input("Ingrese el segundo numero: "))
 
+# Verificar que el primero sea mayor que el segundo
+while numero1 <= numero2:
+    print("El primer numero debe ser mayor que el segundo. Por favor, ingrese un numero valido.")
+    numero2 = float(input("Ingrese el primer numero nuevamente: "))
+
 # Calcular el porcentaje
-porcentaje = (numero1 / numero2) * 100
+diferencia = numero1 - numero2
+porcentaje = (diferencia / numero2) * 100
 
 # Mostrar el resultado
-print("El porcentaje entre", numero1, "y", numero2, "es: %",porcentaje)
+print("\nEl porcentaje entre", numero1, "y", numero2, "es: %",porcentaje)
+
+input("\nPersione enter para continuar...")
