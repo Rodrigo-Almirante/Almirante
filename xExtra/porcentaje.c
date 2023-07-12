@@ -24,9 +24,5 @@ int main() {
    // Mostrar el resultado
    printf("\nEl porcentaje entre %.2f y %.2f es: %%%.2f\n", numero1, numero2, porcentaje);
    
-       // Esperar a que se toque una tecla para continuar
-   scanf("\nPresione cualquier tecla para continuar...%d");
-
-
    return 0;
 }
