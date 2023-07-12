@@ -14,7 +14,7 @@ int main() {
     while (numero1 <= numero2) {
         cout << "El segundo numero debe ser menor que el primero. Por favor, ingrese un numero valido." << endl;
         
-        cout << "Ingrese el primer numero nuevamente: ";
+        cout << "Ingrese el segundo numero nuevamente: ";
         cin >> numero2;
     }
 
