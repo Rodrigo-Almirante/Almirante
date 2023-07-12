@@ -12,10 +12,10 @@ int main() {
 
     // Verificar si el primer número es mayor que el segundo
     while (numero1 <= numero2) {
-        cout << "El primer numero debe ser mayor que el segundo. Por favor, ingrese un numero valido." << endl;
+        cout << "El segundo numero debe ser menor que el primero. Por favor, ingrese un numero valido." << endl;
         
         cout << "Ingrese el primer numero nuevamente: ";
-        cin >> numero1;
+        cin >> numero2;
     }
 
    // Calcular el porcentaje

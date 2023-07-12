@@ -5,8 +5,8 @@ numero2 = float(input("Ingrese el segundo numero: "))
 
 # Verificar que el primero sea mayor que el segundo
 while numero1 <= numero2:
-    print("El primer numero debe ser mayor que el segundo. Por favor, ingrese un numero valido.")
-    numero2 = float(input("Ingrese el primer numero nuevamente: "))
+    print("El segundo numero debe ser menor que el primero. Por favor, ingrese un numero valido.")
+    numero2 = float(input("Ingrese el segundo numero nuevamente: "))
 
 # Calcular el porcentaje
 diferencia = numero1 - numero2

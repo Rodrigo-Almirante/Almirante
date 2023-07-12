@@ -11,9 +11,9 @@ int main() {
 
     // Verificar si el primer número es mayor que el segundo
     while (numero1 <= numero2) {
-        printf("El primer número debe ser mayor que el segundo. Por favor, ingrese un numero valido.\n");
-        printf("Ingrese el primer numero nuevamente: ");
-        scanf("%f", &numero1);
+        printf("El segundo numero debe ser menor que el primero. Por favor, ingrese un numero valido.\n");
+        printf("Ingrese el segundo numero nuevamente: ");
+        scanf("%f", &numero2);
     }
 
 
