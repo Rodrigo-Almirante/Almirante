@@ -9,3 +9,5 @@ IP        : Scripts para mostrar la IP local o Externa
 OPEN SSL  : Instrucciones para instalar Open SSL y comandos para recibir certificados
 
 Search    : Scripts para hacer una busqueda desde dentro de la script o utilizando el browser externo por default
+
+Varios    : Ejemplos varios de scripts en Python, C y C++
