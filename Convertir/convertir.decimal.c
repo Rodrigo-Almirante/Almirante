@@ -65,6 +65,9 @@ int main() {
     decimalToHexadecimal(numero);
     decimalToOctal(numero);
     decimalToBinario(numero);
+
+   printf("\n         Presione cualquier tecla para continuar\n");  
+   getch();
     
     return 0;
 }
