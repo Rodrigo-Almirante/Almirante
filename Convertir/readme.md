@@ -11,3 +11,8 @@ convertirzB.py: Convierte un numero Binario a Decimal, Hexadecimal y Octal
 convertir.decimal.c   : Convierte un numero Decimal a Hexadecimal, Octal y Binario en C
 
 convertir.decimal.cpp : Convierte un numero Decimal a Hexadecimal, Octal y Binario en C++
+
+
+convertir.hexadecimal.c   :  Convierte un numero Hexadecimal a Decimal, Octal y Binario en C
+
+convertir.hexadecimal.cpp :  Convierte un numero Hexadecimal a Decimal, Octal y Binario en C++
