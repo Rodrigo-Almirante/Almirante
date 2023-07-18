@@ -1,4 +1,4 @@
-# coding: cp1252
+# coding: cp1252                                                 # Se tiene que utilizar por los acentos en el codigo, incluso en los comentarios
 # pip install requests beautifulsoup4
 
 import requests
