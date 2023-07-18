@@ -10,4 +10,4 @@ Dolar      : Lee la cotizacion del dolar de un sitio en formato JSON y muestra s
              
              dolar.cronista.with.connection.check verifica que tenga conexion de internet
 
-pronostico.accuweather : Script en Python para leer el clima de un mes entero sin necesidad de API Key
+pronostico.accuweather : Script en Python para leer de AccuWeather.com el clima de un mes entero sin necesidad de API Key
