@@ -7,15 +7,15 @@ from bs4 import BeautifulSoup
 def obtener_pronostico_semana(localidad):
     # Definir la URL de AccuWeather con la localidad
     #url = f'https://www.accuweather.com/es/search-locations?query={localidad}'
-    url = "https://www.accuweather.com/en/ar/santa-fÈ/11221/daily-weather-forecast/11221"
+    url = "https://www.accuweather.com/en/ar/santa-f√©/11221/daily-weather-forecast/11221"
     #print(url)
 
-    # Establecer encabezados para hacer que parezca que se est· usando Firefox 115
+    # Establecer encabezados para hacer que parezca que se est√° usando Firefox 115
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:115.0) Gecko/20100101 Firefox/115.0',
     }
 
-    # Realizar la solicitud HTTP a la p·gina de b˙squeda de la localidad
+    # Realizar la solicitud HTTP a la p√°gina de b√∫squeda de la localidad
     response = requests.get(url, headers=headers)
     #print("Respense text : \n",response.text)
 
@@ -23,7 +23,7 @@ def obtener_pronostico_semana(localidad):
     soup = BeautifulSoup(response.content, 'html.parser')
     #print("primer soup :\n",soup)
 
-    # Encontrar el enlace del pronÛstico semanal en la p·gina de resultados de b˙squeda
+    # Encontrar el enlace del pron√≥stico semanal en la p√°gina de resultados de b√∫squeda
     resultado = soup.find(class_='daily-wrapper').find('a')
     #print(resultado)
     pronostico_url = f'https://www.accuweather.com{resultado["href"]}'
@@ -31,7 +31,7 @@ def obtener_pronostico_semana(localidad):
     url_now = pronostico_url.split('?')[0]                                 # Corta la string cuando encuentra ?
     print(url_now)
 
-    # Realizar la solicitud HTTP al enlace del pronÛstico semanal
+    # Realizar la solicitud HTTP al enlace del pron√≥stico semanal
     response = requests.get(url_now, headers=headers)                     # Utiliza la string cortada
     #response = requests.get(pronostico_url, headers=headers)
     #print("Response :\n",response.text)
@@ -102,11 +102,11 @@ def obtener_pronostico_semana(localidad):
 
     #print(dia)
 
-    # Analizar el contenido HTML del pronÛstico semanal
+    # Analizar el contenido HTML del pron√≥stico semanal
     soup = BeautifulSoup(response.content, 'html.parser')
     #print("Aca empieza: \n",soup)
 
-    # Encontrar y extraer el pronÛstico dÌa por dÌa de la semana
+    # Encontrar y extraer el pron√≥stico d√≠a por d√≠a de la semana
     #pronostico_semana = soup.find_all(class_='info')
     #pronostico_semana = soup.findAll('div', attrs={'class': 'half-day-card-header__content'})
     #pronostico_semana = soup.findAll('div', attrs={'class': 'half-day-card-header__title'})
@@ -115,12 +115,12 @@ def obtener_pronostico_semana(localidad):
 
     #print(pronostico_semana)
 
-    # Crear una lista para almacenar los pronÛsticos
+    # Crear una lista para almacenar los pron√≥sticos
     pronosticos = []
 
-    # Recorrer los pronÛsticos de cada dÌa
+    # Recorrer los pron√≥sticos de cada d√≠a
     for pronostico_dia in pronostico_semana:
-        # Extraer la informaciÛn del pronÛstico del dÌa
+        # Extraer la informaci√≥n del pron√≥stico del d√≠a
         #dia = pronostico_dia.find(class_='short-date').get_text(strip=True)
         #print(soup)
         #descripcion = pronostico_dia.find(class_='phrase').get_text(strip=True)
@@ -128,15 +128,15 @@ def obtener_pronostico_semana(localidad):
         #temperatura_min = pronostico_dia.find(class_='panel-item').get_text(strip=True)
         #print("Descripcion : ",descripcion)
         print("Max: ",temperatura_max)
-        # Crear un diccionario con la informaciÛn del pronÛstico del dÌa
+        # Crear un diccionario con la informaci√≥n del pron√≥stico del d√≠a
         pronostico = {
-            'DÌa': dia,
-            'DescripciÛn': descripcion,
-            'Temperatura m·xima': temperatura_max,
-            'Temperatura mÌnima': temperatura_min
+            'D√≠a': dia,
+            'Descripci√≥n': descripcion,
+            'Temperatura m√°xima': temperatura_max,
+            'Temperatura m√≠nima': temperatura_min
         }
 
-        # Agregar el pronÛstico a la lista
+        # Agregar el pron√≥stico a la lista
         pronosticos.append(pronostico)
 
     
@@ -147,9 +147,9 @@ def obtener_pronostico_semana(localidad):
 #localidad = input("Ingrese la localidad: ")
 localidad = 11221
 
-# Obtener el pronÛstico de la semana para la localidad ingresada
+# Obtener el pron√≥stico de la semana para la localidad ingresada
 pronosticos_semana = obtener_pronostico_semana(localidad)
 
-# Imprimir los pronÛsticos dÌa por dÌa
+# Imprimir los pron√≥sticos d√≠a por d√≠a
 #for pronostico in pronosticos_semana:
-#    print(f'{pronostico["DÌa"]}: {pronostico["DescripciÛn"]}, {pronostico["Temperatura m·xima"]}/{pronostico["Temperatura mÌnima"]}∞C')
+#    print(f'{pronostico["D√≠a"]}: {pronostico["Descripci√≥n"]}, {pronostico["Temperatura m√°xima"]}/{pronostico["Temperatura m√≠nima"]}¬∞C')
