@@ -81,8 +81,7 @@ try:
   dolar2019="69,00"
   Brecha=CalcularBrecha(dolar2019,Blue)
 
-
-  print(color.BOLD+"Devaluacion desde 2019 : "+color.CYAN+"%"+str(Brecha),color.END)
+  print(color.BOLD+"Devaluacion desde 2019 : "+color.END+color.CYAN+"%"+str(int(Brecha)),color.END)
 
   conectado=True
 
