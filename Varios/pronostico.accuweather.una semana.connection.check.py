@@ -16,7 +16,8 @@ def isConnectedWithInternet():
 
 def obtener_pronostico_semana(localidad):
     # Localidad = 11221
-    url = "https://www.accuweather.com/en/ar/santa-fé/11221/daily-weather-forecast/11221"
+    # url = "https://www.accuweather.com/en/ar/santa-fé/11221/daily-weather-forecast/11221"                   # Resultados en ingles
+    url = "https://www.accuweather.com/es/ar/santa-fé/11221/daily-weather-forecast/11221"
 
 
     # Establecer encabezados para hacer que parezca que se esta usando Firefox 115
