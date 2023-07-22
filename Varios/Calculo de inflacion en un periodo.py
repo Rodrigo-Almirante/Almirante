@@ -1,9 +1,9 @@
 
-porcentaje = input("\nIngresar el porcentaje mensual (7%): %")
+porcentaje = input("\nIngresar el porcentaje mensual % : 7\b")
 if not porcentaje:
   porcentaje = "7"
 
-periodo = input("\nIngresar el Periodo en meses  (12): ")
+periodo = input("\nIngresar el Periodo en meses     : 12\b\b")
 if not periodo:
   periodo = "12"
 
