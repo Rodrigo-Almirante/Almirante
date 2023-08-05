@@ -24,9 +24,9 @@ def calcular_determinante(matriz):
 
     return determinante
 
-# Ingresar el tamaño de la matriz
-filas = int(input("Ingresa el número de filas de la matriz: "))
-columnas = int(input("Ingresa el número de columnas de la matriz: "))
+# Ingresar el tamaÃ±o de la matriz
+filas = int(input("Ingresa el nÃºmero de filas de la matriz: "))
+columnas = int(input("Ingresa el nÃºmero de columnas de la matriz: "))
 
 # Verificar que la matriz sea cuadrada
 if filas != columnas:
@@ -37,7 +37,7 @@ else:
     for i in range(filas):
         fila = []
         for j in range(columnas):
-            valor = float(input(f"Ingrese el valor para la posición [{i}][{j}]: "))
+            valor = float(input(f"Ingrese el valor para la posiciÃ³n [{i}][{j}]: "))
             fila.append(valor)
         matriz.append(fila)
 
@@ -75,9 +75,9 @@ def calcular_determinante(matriz):
 
     return determinante
 
-# Ingresar el tamaño de la matriz
-filas = int(input("Ingresa el número de filas de la matriz: "))
-columnas = int(input("Ingresa el número de columnas de la matriz: "))
+# Ingresar el tamaÃ±o de la matriz
+filas = int(input("Ingresa el nÃºmero de filas de la matriz: "))
+columnas = int(input("Ingresa el nÃºmero de columnas de la matriz: "))
 
 # Verificar que la matriz sea cuadrada
 if filas != columnas:
@@ -88,7 +88,7 @@ else:
     for i in range(filas):
         fila = []
         for j in range(columnas):
-            valor = float(input(f"Ingrese el valor para la posición [{i}][{j}]: "))
+            valor = float(input(f"Ingrese el valor para la posiciÃ³n [{i}][{j}]: "))
             fila.append(valor)
         matriz.append(fila)
 
