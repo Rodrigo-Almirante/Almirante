@@ -1,20 +1,20 @@
 # coding: cp1252
 
-# Función para calcular el determinante de una matriz
+# FunciÃ³n para calcular el determinante de una matriz
 def calcular_determinante(matriz):
     n = len(matriz)
     det = 0
     
-    # Caso base: si la matriz es de 1x1, el determinante es el elemento único de la matriz
+    # Caso base: si la matriz es de 1x1, el determinante es el elemento Ãºnico de la matriz
     if n == 1:
         return matriz[0][0]
     
-    # Si la matriz es de tamaño 2x2, utiliza la fórmula directamente
+    # Si la matriz es de tamaÃ±o 2x2, utiliza la fÃ³rmula directamente
     if n == 2:
         det = matriz[0][0] * matriz[1][1] - matriz[0][1] * matriz[1][0]
     else:
-        # Si la matriz es de tamaño mayor a 2x2,
-        # utiliza la expansión por cofactores para calcular el determinante
+        # Si la matriz es de tamaÃ±o mayor a 2x2,
+        # utiliza la expansiÃ³n por cofactores para calcular el determinante
         for c in range(n):
             submatriz = [[0] * (n-1) for _ in range(n-1)]
             for i in range(1, n):
@@ -25,7 +25,7 @@ def calcular_determinante(matriz):
 
 
 # Ingreso de la matriz
-n = int(input("Ingrese el tamaño de la matriz cuadrada: "))
+n = int(input("Ingrese el tamaÃ±o de la matriz cuadrada: "))
 matriz = []
 print("Ingrese los elementos de la matriz fila por fila SEPARADOS por un espacio:")
 for _ in range(n):
