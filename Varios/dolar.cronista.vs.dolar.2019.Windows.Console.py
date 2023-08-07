@@ -1,5 +1,5 @@
 import requests
-from colorama import just_fix_windows_console
+from colorama import just_fix_windows_console          # pip install colorama
 
 class color:
    PURPLE = '\033[95m'
@@ -27,7 +27,7 @@ def CalcularBrecha(Oficial,Blue):
 
 conectado=False
 
-just_fix_windows_console()
+just_fix_windows_console()                             # Arregla los colores ANSI para la consola de Windows
 
 try:
 
