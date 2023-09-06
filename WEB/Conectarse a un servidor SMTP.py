@@ -7,7 +7,7 @@ def enviar_correo(destinatario, asunto, mensaje):
     usuario_smtp = "tu_usuario"
     clave_smtp = "tu_clave"
 
-    # Establecer la conexión con el servidor SMTP
+    # Establecer la conexiÃ³n con el servidor SMTP
     servidor = smtplib.SMTP(servidor_smtp, puerto_smtp)
     servidor.starttls()
     servidor.login(usuario_smtp, clave_smtp)
@@ -18,7 +18,7 @@ def enviar_correo(destinatario, asunto, mensaje):
     # Enviar el correo
     servidor.sendmail(usuario_smtp, destinatario, mensaje_correo)
 
-    # Cerrar la conexión con el servidor SMTP
+    # Cerrar la conexiÃ³n con el servidor SMTP
     servidor.quit()
 
 # Ejemplo de uso
