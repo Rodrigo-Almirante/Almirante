@@ -7,7 +7,7 @@ def enviar_correo(destinatario, asunto, mensaje):
     usuario_smtp = "tu_usuario"  # Opcional
     clave_smtp = "tu_clave"     # Opcional
 
-    # Establecer la conexiÃ³n con el servidor SMTP
+    # Establecer la conexión con el servidor SMTP
     servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     servidor.connect((servidor_smtp, puerto_smtp))
     respuesta = servidor.recv(1024).decode()
@@ -51,7 +51,7 @@ def enviar_correo(destinatario, asunto, mensaje):
     respuesta = servidor.recv(1024).decode()
     print(respuesta)
 
-    # Cerrar la conexiÃ³n con el servidor SMTP
+    # Cerrar la conexión con el servidor SMTP
     servidor.send("QUIT\r\n".encode())
     respuesta = servidor.recv(1024).decode()
     print(respuesta)
