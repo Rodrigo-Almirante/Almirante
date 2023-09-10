@@ -37,31 +37,30 @@ try:
   response = requests.get(url)
 
   if response.status_code == 200:
+    conectado = True
+
     print("\nCotizacion del dolar sitio cronista.com")
     start = response.text.find('Compra') + len('</div><div class=buy-value><span class="currency">$</span>')+len('517,00')
 
     if start <= 80:
-     print("\nString "+color.PURPLE+"Compra NO Encontrada",color.END)
-     conectado = True
-     sys.exit()
+     print("\nString "+color.PURPLE+"Compra",color.END+"NO Encontrada")
 
-
-    end = response.text.find('</div></div></a></td>', start)
-    compra = response.text[start:end]
-    print("\nBlue COMPRA    : $"+compra)
+    else:
+     end = response.text.find('</div></div></a></td>', start)
+     compra = response.text[start:end]
+     print("\nBlue COMPRA    : $"+compra)
 
     start = response.text.find('Venta') + len('</div><div class=sell-value><span class="currency">$</span')+len('522,00')
 
     if start <= 80:
-     print("\nString "+color.PURPLE+"Venta NO Encontrada",color.END)
-     conectado = True
-     sys.exit()
+     print("\nString "+color.PURPLE+"Venta",color.END+"NO Encontrada")
 
-    end = response.text.find('</div></div></a></td>', start)
-    venta = response.text[start:end]
-    print("Blue VENTA     : "+color.CYAN+"$"+venta+ color.END)
+    else:
+     end = response.text.find('</div></div></a></td>', start)
+     venta = response.text[start:end]
+     print("Blue VENTA     : "+color.CYAN+"$"+venta+ color.END)
 
-    Blue=venta
+     Blue=venta
 
   else:
     print("No se pudo conectar al website.")
@@ -72,30 +71,28 @@ try:
   response = requests.get(url)
 
   if response.status_code == 200:
+    conectado = True
 
     start = response.text.find('Compra') + len('</div><div class=buy-value><span class="currency">$</span>')+len('264,00')
 
     if start <= 80:
-     print("\nString "+color.RED+"Compra NO Encontrada",color.END)
-     conectado = True
-     sys.exit()
+     print("\nString "+color.RED+"Compra",color.END+"NO Encontrada")
 
-    end = response.text.find('</div></div></a></td>', start)
-    compra = response.text[start:end]
-    print("\nOficial COMPRA : $"+compra)
-
+    else:
+     end = response.text.find('</div></div></a></td>', start)
+     compra = response.text[start:end]
+     print("\nOficial COMPRA : $"+compra)
 
     start = response.text.find('Venta') + len('</div><div class=sell-value><span class="currency">$</span')+len('522,00')
 
     if start <= 80:
-     print("\nString "+color.RED+"Venta NO Encontrada",color.END)
-     conectado = True
-     sys.exit()
+     print("\nString "+color.RED+"Venta",color.END+"NO Encontrada")
 
-    end = response.text.find('</div></div></a></td>', start)
-    venta = response.text[start:end]
-    #print(start, end,venta)
-    print("Oficial VENTA  : $"+venta)
+    else:
+     end = response.text.find('</div></div></a></td>', start)
+     venta = response.text[start:end]
+     #print(start, end,venta)
+     print("Oficial VENTA  : $"+venta)
 
     Oficial=venta
 
