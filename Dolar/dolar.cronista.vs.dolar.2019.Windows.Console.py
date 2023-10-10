@@ -18,6 +18,8 @@ class color:
 def CalcularBrecha(Oficial,Blue):
 
   Blue=Blue.replace(".", "")                   # Elimina el "." de la string
+  Oficial=Oficial.replace(".", "")             # Elimina el "." de la string
+
   # print("Oficial",int(Oficial.split(",")[0],10),"Blue", int(Blue.split(",")[0],10))
 
   numero1=int(Oficial.split(",")[0],10)
