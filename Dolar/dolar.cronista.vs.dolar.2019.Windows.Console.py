@@ -17,9 +17,13 @@ class color:
 # Funcion Calcula Brecha, calcula la brecha entre el dolar oficial y el blue devolviendo un valor flotante
 def CalcularBrecha(Oficial,Blue):
 
+  Blue=Blue.replace(".", "")                   # Elimina el "." de la string
+  # print("Oficial",int(Oficial.split(",")[0],10),"Blue", int(Blue.split(",")[0],10))
+
   numero1=int(Oficial.split(",")[0],10)
   numero2=int(Blue.split(",")[0],10)
 
+  # print(numero1,numero2)
   diferencia = numero2 - numero1
   Brecha = (diferencia / numero1) * 100
 
